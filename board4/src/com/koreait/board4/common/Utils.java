@@ -17,7 +17,7 @@ public class Utils {
 			
 		request.setAttribute("page", String.format("/WEB-INF/view/%s.jsp", innerPage));
 		forward(title, openPage, request, response);
-		
+		System.out.println("asd");
 	}
 	
 	public static void forward(String title, String openPage, HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
