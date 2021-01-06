@@ -10,7 +10,7 @@
 	<div id="centerContainer">
 	
 		<div>
-			<form action="/login" method="post">
+			<form action="/user/loginProc.korea" method="post">
 				<div><input type="text" name="user_id" placeholder="id" value="${user_id}gjehdalshh" ></div>
 				<div><input type="password" name="user_pw" placeholder="password" value ="ehdals11"></div>
 				<div><input type="submit" value="LOGIN"></div>

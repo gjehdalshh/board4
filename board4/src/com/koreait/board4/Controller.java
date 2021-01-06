@@ -26,6 +26,9 @@ public class Controller {
 			case "login.korea":
 				uCont.login(request, response);
 				return;
+			case "loginProc.korea":
+				uCont.loginProc(request, response);
+				return;
 			}
 		break;
 		case "board":
