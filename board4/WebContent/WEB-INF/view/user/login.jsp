@@ -16,9 +16,10 @@
 				<div><input type="submit" value="LOGIN"></div>
 			</form>
 			<div style="color:red;">${msg}</div>
-			<a href="/join">join</a>
+			<a href="/user/join.korea">join</a>
 		</div>
 		
 	</div>
 </body>
 </html>
+

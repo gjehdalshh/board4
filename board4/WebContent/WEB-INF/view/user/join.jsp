@@ -11,7 +11,7 @@
 	<div id="centerContainer">
 	
 		<div>
-			<form id="frm" action="/join" method="post">
+			<form id="frm" action="/user/joinProc.korea" method="post">
 				<div><input type="text" name="user_id" placeholder="id" required></div>
 				<div><input type="password" name="user_pw" placeholder="password" required></div>
 				<div><input type="password" name="user_pw_chk" placeholder="password check" required></div>
@@ -26,7 +26,6 @@
 				</div>
 				<div><input type="submit" value="LOGIN"></div>
 			</form>
-			<a href="/login">Go to Login</a>
 		</div>
 	</div>
 	
