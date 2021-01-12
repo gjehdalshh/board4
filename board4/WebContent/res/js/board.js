@@ -1,7 +1,7 @@
 
 // 글 제목 클릭
 function clkArticle(i_board) {
-	var url = `detail?i_board=${i_board}`;
+	var url = `/board/detail.korea?i_board=${i_board}`;
 	location.href = url; // 주소값 이동
 }
 
