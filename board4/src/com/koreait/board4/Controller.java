@@ -68,6 +68,24 @@ public class Controller {
 		
 		if(SecurityUtils.getLoginUserPk(request) > 0) { // 로그인이 되어 있는 상태
 			switch(urlArr[1]) {
+			case "user":
+				switch(urlArr[2]) {
+				case "profile.korea":
+					uCont.profile(request, response);
+					return;
+				case "profileUpload.korea":
+					uCont.profileUpload(request, response);
+					return;
+				case "delProfileImg.korea":
+					uCont.delProfileImg(request, response);
+					return;
+				case "changePw.korea":
+					uCont.changePw(request, response);
+					return;
+				case "changePwProc.korea":
+					uCont.changePwProc(request, response);
+					return;
+				}
 			case "board":
 				switch(urlArr[2]) {
 				case "reg.korea":
@@ -80,6 +98,9 @@ public class Controller {
 					return;
 				case "modProc.korea":
 					bCont.modProc(request, response);
+					return;
+				case "ajaxFavorite.korea":
+					bCont.ajaxFavorite(request, response);
 					return;
 				}
 			}

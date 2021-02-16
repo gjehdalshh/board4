@@ -39,7 +39,7 @@ function toggleFavorite(i_board) {
 	var state = fc.getAttribute('is_favorite'); // 1 : 좋아요, 0 : 안 좋아요
 	var state = 1 - state;
 	
-	axios.get('/board/ajaxfavorite', {
+	axios.get('/board/ajaxFavorite.korea', {
 		params: {
 			'state' : state,
 			'i_board' : i_board
@@ -58,5 +58,8 @@ function toggleFavorite(i_board) {
 		console.err('err 발생 : '+err);
 	});
 	
+
+
+
 }
 
